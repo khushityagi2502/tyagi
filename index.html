@@ -57,3 +57,66 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Website</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s;
+    }
+    h1 {
+      color: #333;
+    }
+    #message {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #555;
+    }
+    .color-btn {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    .color-btn:hover {
+      background-color: #ff4c4c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Welcome to Fun Website 🎉</h1>
+  <p id="message">Click the button to get shocked!</p>
+
+  <button class="color-btn" onclick="changeMessage()">Click Me!</button>
+
+  <script>
+    function changeMessage() {
+      const shockMessages = [
+        "😱 OMG! You got shocked!",
+        "😳 Surprise! You are shocked!",
+        "😵‍💫 What just happened?!",
+        "😮‍💨 You didn’t see that coming!",
+        "😲 Shock mode activated!"
+      ];
+
+      const colors = ["#ffeaa7", "#81ecec", "#74b9ff", "#a29bfe", "#fd79a8"];
+
+      const randomMsg = shockMessages[Math.floor(Math.random() * shockMessages.length)];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      document.getElementById("message").innerHTML = randomMsg;
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
