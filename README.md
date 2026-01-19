@@ -10,3 +10,4 @@ Khushi Tyagi
 
 ## 📌 Note
 This project is created for learning purpose.
+https://khushityagi2502.github.io/tyagi/
